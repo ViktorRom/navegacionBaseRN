@@ -7,4 +7,7 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#fff',
   },
+  text: {
+    fontFamily: 'Inter-Bold',
+  },
 });

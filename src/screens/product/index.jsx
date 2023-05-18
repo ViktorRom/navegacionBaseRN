@@ -6,7 +6,7 @@ const Product =()=>{
 
     return(
         <View styles={styles.container}>
-            <Text>Product</Text>
+            <Text>Bravo! llegate a product</Text>
         </View>
     )
 }

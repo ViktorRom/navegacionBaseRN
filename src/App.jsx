@@ -1,14 +1,12 @@
 import React from "react";
-import { Text, View } from "react-native";
+import { Text, View, ActivityIndicator } from "react-native";
+import {styles} from './styles'
+import Navigation from './navigation'
+
 
 const App = () =>{
-
   return(
-    <View>
-      <Text>
-       No te iba a durar toda la vida Ivan
-      </Text>
-    </View>
+    <Navigation/>
   )
 }
 export default App;
