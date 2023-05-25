@@ -4,7 +4,7 @@ import { COLORS } from "../../constants";
 
 const Stack = createNativeStackNavigator();
 
-const MainNavigator = () =>{
+const StoreNavigator = () =>{
     return(
         <Stack.Navigator initialRouteName="Categories" screenOptions={{
             headerStyle:{
@@ -13,11 +13,11 @@ const MainNavigator = () =>{
             headerTintColor : COLORS.text,
         }}>
             <Stack.Screen name="Categories" component={Categories} options={({route})=>({
-             //   title: route.params.name,
+               //title: route.params.name,
             })}
             />
             <Stack.Screen name="Products" component={Products} options={({route})=>({
-             //   title: route.params.name,
+               //title: route.params.name,  
             })}
             />
             <Stack.Screen name="Product" component={Product}/>
@@ -25,4 +25,4 @@ const MainNavigator = () =>{
 
     );
 };
-export default MainNavigator;
+export default StoreNavigator;

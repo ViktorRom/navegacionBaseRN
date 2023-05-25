@@ -8,13 +8,15 @@ const Product =({route})=>{
     const {productId} = route.params;
     
     const product = PRODUCTS.find((product) => product.id===productId);
-
-    console.warn(product)
-
     return(
         <View style={styles.container}>
-            <Image  source={{uri:product.img}} style={styles.image}/>
-            <Text>{product.name}</Text>
+            <View style={styles.image}>
+                <Image source={{uri:product.img}} style={styles.img}/>
+            </View>
+            <View style={styles.info}>
+                <Text style={styles.name}>{product.name}</Text>
+                <Text style={styles.description}>{product.description}</Text>  
+            </View>
         </View>
     )
 }
