@@ -8,10 +8,19 @@ import CartNavigator from "../carts";
 const BottomTab = createBottomTabNavigator();
 const TabNavigation = () =>{
     return(
-        <BottomTab.Navigator>
-            <BottomTab.Screen name='StoreTab' component={StoreNavigator}/>
-            <BottomTab.Screen name='OrderTabs' component={OrdersNavigator}/>
-            <BottomTab.Screen name='CartTab' component={CartNavigator}/>
+        <BottomTab.Navigator initialRouteName="StoreTab"
+            screenOptions={{
+                headerShown :false,}
+            }>
+            <BottomTab.Screen name='StoreTab' component={StoreNavigator} options={{
+              tabBarLabel:"Store"  
+            }}/>
+            <BottomTab.Screen name='OrderTabs' component={OrdersNavigator} options={{
+              tabBarLabel:"Orders"  
+            }}/>
+            <BottomTab.Screen name='CartTab' component={CartNavigator} options={{
+              tabBarLabel:"Cart"  
+            }}/>
         </BottomTab.Navigator>
     );
 };

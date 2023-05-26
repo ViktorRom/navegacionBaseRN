@@ -7,7 +7,7 @@ const Orders =()=>{
     return(
         <View style={styles.container}>
             <Text>
-                    Soy un carrito
+                    Soy un order
             </Text>
         </View>
     );

@@ -1,5 +1,5 @@
-import {StyleSheet} from 'react-native';
-import {COLORS} from "../../constants";
+import {StyleSheet} from "react-native";
+import {COLORS} from '../../constants';
 
 export const styles = StyleSheet.create({
   container: {
@@ -11,8 +11,9 @@ export const styles = StyleSheet.create({
     marginVertical: 10,
   },
   name: {
-    fontWeight: "bold",
-    textAlign: "center",
+    fontWeight: 'bold',
+    textAlign: 'center',
     color: COLORS.text,
+    fontSize: 20,
   },
 });

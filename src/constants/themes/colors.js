@@ -5,4 +5,5 @@ export const COLORS = {
   black: '#000000',
   white: '#FFF',
   flashWhite: '#ECF0F1',
+  redBright: '#E23428',
 };
